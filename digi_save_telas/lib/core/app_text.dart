@@ -26,4 +26,22 @@ class AppText {
     fontSize: 13,
     fontWeight: FontWeight.normal,
   );
+
+  static final TextStyle ola = GoogleFonts.montserrat(
+    color: AppColors.backgroundSplash,
+    fontSize: 21,
+    fontWeight: FontWeight.bold,
+  );
+
+  static final TextStyle sobre = GoogleFonts.montserrat(
+    color: AppColors.screenRegister,
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+  );
+
+  static final TextStyle buttonEqui = GoogleFonts.montserrat(
+    color: Colors.black,
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+  );
 }
