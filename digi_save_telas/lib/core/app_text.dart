@@ -35,13 +35,19 @@ class AppText {
 
   static final TextStyle sobre = GoogleFonts.montserrat(
     color: AppColors.screenRegister,
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: FontWeight.normal,
   );
 
   static final TextStyle buttonEqui = GoogleFonts.montserrat(
     color: Colors.black,
     fontSize: 12,
+    fontWeight: FontWeight.normal,
+  );
+
+  static final TextStyle gridLetter = GoogleFonts.montserrat(
+    color: AppColors.white,
+    fontSize: 13,
     fontWeight: FontWeight.normal,
   );
 }

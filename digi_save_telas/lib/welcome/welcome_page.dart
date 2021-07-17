@@ -7,10 +7,10 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 class WelcomePage extends StatelessWidget {
   final List<String> imageList = [
-    'assets/images/image_slide_1.png',
-    'assets/images/image_slide_1.png',
-    'assets/images/image_slide_1.png',
-    'assets/images/image_slide_1.png'
+    'assets/images/Image_slide_1.png',
+    'assets/images/Image_slide_1.png',
+    'assets/images/Image_slide_1.png',
+    'assets/images/Image_slide_1.png'
   ];
 
   @override
@@ -40,17 +40,24 @@ class WelcomePage extends StatelessWidget {
                     autoPlay: true,
                   ),
                   items: imageList
-                      .map((e) => ClipRRect(
-                            borderRadius: BorderRadius.circular(8),
-                            child: Stack(
-                              fit: StackFit.expand,
-                              children: [Image.asset(e)],
-                            ),
-                          ))
+                      .map(
+                        (e) => ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Stack(
+                            fit: StackFit.expand,
+                            children: [
+                              Image.asset(
+                                e,
+                              )
+                            ],
+                          ),
+                        ),
+                      )
                       .toList(),
                 ),
               ),
             ),
+            SizedBox(height: 8),
             RichText(
               text: TextSpan(
                 text:

@@ -147,14 +147,142 @@ class _HomePageState extends State<HomePage> {
                   style: AppText.textButton,
                 ),
               ),
-              SizedBox(height: 8),
               Container(
-                decoration: BoxDecoration(
-                    border: Border.all(color: Colors.purpleAccent, width: 8),
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.deepPurple),
-                height: 200,
+                height: 230,
                 width: 300,
+                child: GridView.count(
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
+                  crossAxisCount: 3,
+                  children: [
+                    Container(
+                      width: 113,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/Surface1.png'),
+                          alignment: Alignment(0, -0.7),
+                        ),
+                        borderRadius: BorderRadius.circular(20),
+                        color: AppColors.backgroundSplash,
+                      ),
+                      padding: const EdgeInsets.all(8),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(2, 45, 2, 0),
+                        child: const Text(
+                          "Cancele sem multas",
+                          style: TextStyle(fontSize: 10, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 113,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/Surface2.png'),
+                          alignment: Alignment(0, -0.7),
+                        ),
+                        borderRadius: BorderRadius.circular(20),
+                        color: AppColors.backgroundSplash,
+                      ),
+                      padding: const EdgeInsets.all(8),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(2, 45, 2, 0),
+                        child: const Text(
+                          "Reembolso na conta",
+                          style: TextStyle(fontSize: 10, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 113,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/Surface3.png'),
+                          alignment: Alignment(0, -0.7),
+                        ),
+                        borderRadius: BorderRadius.circular(20),
+                        color: AppColors.backgroundSplash,
+                      ),
+                      padding: const EdgeInsets.all(8),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(2, 45, 2, 0),
+                        child: const Text(
+                          "Sem franquia e sem carência",
+                          style: TextStyle(fontSize: 10, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 113,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/Surface4.png'),
+                          alignment: Alignment(0, -0.7),
+                        ),
+                        borderRadius: BorderRadius.circular(20),
+                        color: AppColors.backgroundSplash,
+                      ),
+                      padding: const EdgeInsets.all(8),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(2, 45, 2, 0),
+                        child: const Text(
+                          "Celulares sem nota fiscal",
+                          style: TextStyle(fontSize: 10, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 113,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/Happy.png'),
+                          alignment: Alignment(0, -0.7),
+                        ),
+                        borderRadius: BorderRadius.circular(20),
+                        color: AppColors.backgroundSplash,
+                      ),
+                      padding: const EdgeInsets.all(8),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(2, 45, 2, 0),
+                        child: const Text(
+                          "Roubo, furto e danos acidentais",
+                          style: TextStyle(fontSize: 9.7, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 113,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: ExactAssetImage('assets/images/Grupo_16.png'),
+                          alignment: Alignment(0, -0.7),
+                        ),
+                        borderRadius: BorderRadius.circular(20),
+                        color: AppColors.backgroundSplash,
+                      ),
+                      padding: const EdgeInsets.all(8),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(2, 45, 2, 0),
+                        child: const Text(
+                          "Tudo sem burocracia",
+                          style: TextStyle(fontSize: 10, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: 8),
               Text(
