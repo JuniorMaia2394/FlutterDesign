@@ -147,6 +147,7 @@ class _HomePageState extends State<HomePage> {
                   style: AppText.textButton,
                 ),
               ),
+              SizedBox(height: 8),
               Container(
                 height: 230,
                 width: 300,
